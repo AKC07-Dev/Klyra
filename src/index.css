@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aura & Ore - Quiet Luxury Design System */
+
+@layer base {
+  :root {
+    /* Core Palette - Soft Linen & Obsidian */
+    --background: 40 33% 97%;
+    --foreground: 0 0% 10%;
+
+    --card: 40 33% 97%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 40 33% 97%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Obsidian Black - Primary */
+    --primary: 0 0% 10%;
+    --primary-foreground: 40 33% 97%;
+
+    /* Champagne Gold - Accent */
+    --accent: 41 45% 56%;
+    --accent-foreground: 0 0% 10%;
+
+    /* Soft neutrals */
+    --secondary: 40 20% 94%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 40 15% 90%;
+    --muted-foreground: 0 0% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 41 45% 56%;
+
+    --radius: 0rem;
+
+    /* Custom luxury tokens */
+    --gold: 41 45% 56%;
+    --gold-light: 41 45% 70%;
+    --linen: 40 33% 97%;
+    --linen-dark: 40 20% 92%;
+    --obsidian: 0 0% 10%;
+    --obsidian-light: 0 0% 20%;
+
+    /* Sidebar (if needed) */
+    --sidebar-background: 40 33% 97%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 0 0% 10%;
+    --sidebar-primary-foreground: 40 33% 97%;
+    --sidebar-accent: 41 45% 56%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 40 20% 88%;
+    --sidebar-ring: 41 45% 56%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 40 33% 97%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 40 33% 97%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 40 33% 97%;
+
+    --primary: 40 33% 97%;
+    --primary-foreground: 0 0% 10%;
+
+    --accent: 41 45% 56%;
+    --accent-foreground: 40 33% 97%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 40 33% 97%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 40 15% 70%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 41 45% 56%;
+
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 40 33% 97%;
+    --sidebar-primary: 40 33% 97%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 41 45% 56%;
+    --sidebar-accent-foreground: 40 33% 97%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 41 45% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    @apply font-normal tracking-tight;
+  }
+}
+
+@layer components {
+  /* Ghost Button - Luxury CTA */
+  .btn-ghost-luxury {
+    @apply relative inline-flex items-center justify-center px-8 py-4 text-sm uppercase tracking-[0.2em] border border-foreground bg-transparent text-foreground transition-all duration-500 ease-out overflow-hidden;
+  }
+
+  .btn-ghost-luxury::before {
+    content: '';
+    @apply absolute inset-0 bg-foreground transform -translate-x-full transition-transform duration-500 ease-out;
+  }
+
+  .btn-ghost-luxury:hover::before {
+    @apply translate-x-0;
+  }
+
+  .btn-ghost-luxury span {
+    @apply relative z-10 transition-colors duration-500;
+  }
+
+  .btn-ghost-luxury:hover span {
+    @apply text-background;
+  }
+
+  /* Underline animation for nav links */
+  .nav-link {
+    @apply relative inline-block text-sm uppercase tracking-[0.15em] text-foreground/80 transition-colors duration-300;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 w-0 h-px bg-accent transition-all duration-300 ease-out -translate-x-1/2;
+  }
+
+  .nav-link:hover {
+    @apply text-foreground;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  /* Product card hover */
+  .product-card {
+    @apply relative overflow-hidden cursor-pointer;
+  }
+
+  .product-card-image {
+    @apply w-full h-full object-cover transition-transform duration-700 ease-out;
+  }
+
+  .product-card:hover .product-card-image {
+    @apply scale-105;
+  }
+
+  /* Custom cursor styles */
+  .cursor-dot {
+    @apply fixed pointer-events-none z-[9999] rounded-full bg-accent mix-blend-difference transition-transform duration-150 ease-out;
+    width: 12px;
+    height: 12px;
+    transform: translate(-50%, -50%);
+  }
+
+  .cursor-dot.hovering {
+    @apply scale-[3] bg-accent/80;
+  }
+
+  /* Reveal animation base */
+  .reveal-up {
+    @apply opacity-0 translate-y-8;
+  }
+
+  .reveal-up.revealed {
+    @apply opacity-100 translate-y-0 transition-all duration-1000 ease-out;
+  }
+
+  /* Gold text accent */
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  /* Parallax section */
+  .parallax-section {
+    @apply relative overflow-hidden;
+  }
+
+  /* Liquid image frame for size chart */
+  .liquid-frame {
+    @apply relative rounded-[3rem] p-[2px] bg-gradient-to-br from-gold/40 via-gold/10 to-transparent overflow-hidden;
+  }
+
+  .liquid-frame::before {
+    content: '';
+    position: absolute;
+    inset: -40%;
+    background: radial-gradient(circle at 0% 0%, hsl(var(--gold)) 0, transparent 50%),
+      radial-gradient(circle at 100% 100%, hsl(var(--gold-light)) 0, transparent 55%);
+    opacity: 0.3;
+    animation: liquid-flow 16s linear infinite;
+  }
+
+  .liquid-frame-inner {
+    @apply relative rounded-[2.6rem] overflow-hidden bg-foreground/5;
+  }
+
+  @keyframes liquid-flow {
+    0% {
+      transform: translate3d(-10%, -10%, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate3d(10%, 10%, 0) rotate(180deg);
+    }
+    100% {
+      transform: translate3d(-10%, -10%, 0) rotate(360deg);
+    }
+  }
+}
+
+@layer utilities {
+  /* Smooth scroll container */
+  .smooth-scroll {
+    overflow: hidden;
+  }
+
+  /* Letter spacing utilities */
+  .tracking-luxury {
+    letter-spacing: 0.2em;
+  }
+
+  .tracking-editorial {
+    letter-spacing: 0.05em;
+  }
+
+  /* Gold gradient text */
+  .gradient-gold {
+    background: linear-gradient(135deg, hsl(var(--gold-light)), hsl(var(--gold)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Luxury shadow */
+  .shadow-luxury {
+    box-shadow: 0 25px 50px -12px hsl(var(--obsidian) / 0.1);
+  }
+}
