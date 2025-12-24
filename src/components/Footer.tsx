@@ -58,6 +58,8 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               Handcrafted luxury anklets, necklaces, and bracelets made with 
               ethically sourced materials. Each piece tells a story of artistry and elegance.
+              <br></br>
+              For more details reach us at Instagram 
             </p>
             <div className="flex gap-4">
               <a
