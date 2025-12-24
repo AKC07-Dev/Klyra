@@ -32,11 +32,11 @@ import necklace5 from '@/assets/necklace5.jpeg';
 type Category = 'all' | 'anklets' | 'necklaces' | 'bracelets';
 
 const products = [
-  {
+   {
     id: 1,
     image: Bracelet,
-    hoverImage: Bracelettt,
-    name: 'Elegant Bracelet',
+    hoverImage: Bracelet,
+    name: 'Elegant Pearl Bracelet',
     price: '60/-',
     description: 'Handcrafted Elegance',
     size: 'default' as const,
@@ -45,7 +45,7 @@ const products = [
   {
     id: 2,
     image: Bracelet1,
-    name: 'Loveable Bracelet',
+    name: 'Loveable Pearl Bracelet',
     price: '60/-',
     description: 'The new aesthetics',
     size: 'default' as const,
@@ -54,7 +54,7 @@ const products = [
   {
     id: 3,
     image: Bracelet7,
-    name: 'Loveable Bracelet',
+    name: 'Soft Love Bracelet',
     price: '60/-',
     description: 'Crafted with Love',
     size: 'default' as const,
@@ -63,7 +63,7 @@ const products = [
   {
     id: 4,
     image: necklace,
-    name: 'Classic Necklace',
+    name: 'Classic Daisy Necklace',
     price: '100/-',
     description: 'The new aesthetics',
     size: 'wide' as const,
@@ -73,7 +73,7 @@ const products = [
     id: 5,
     image: Bracelet2,
     hoverImage: Bracelet2,
-    name: 'Elegant Bracelet',
+    name: 'Daisy Bloom Bracelet',
     price: '60/-',
     description: 'Our new collection',
     size: 'default' as const,
@@ -82,7 +82,7 @@ const products = [
   {
     id: 6,
     image: Bracelet8,
-    name: 'Elegant Bracelet',
+    name: 'Black Daisy Bracelet',
     price: '60/-',
     description: 'Timeless Beauty',
     size: 'default' as const,
@@ -100,7 +100,7 @@ const products = [
   {
     id: 8,
     image: Bracelet9,
-    name: 'Elegant Bracelet',
+    name: 'Mini Daisy Bracelet',
     price: '60/-',
     description: 'Our new collection',
     size: 'default' as const,
@@ -109,7 +109,7 @@ const products = [
   {
     id: 9,
     image: Bracelet4,
-    name: 'Elegant Bracelet',
+    name: 'Golden Sunflower Bracelet',
     price: '60/-',
     description: 'Crafted with Love',
     size: 'default' as const,
@@ -118,7 +118,7 @@ const products = [
   {
     id: 10,
     image: Bracelet3,
-    name: 'Elegant Bracelet',
+    name: 'Daisy Bloom Bracelet',
     price: '60/-',
     description: 'The new aesthetics',
     size: 'default' as const,
@@ -127,7 +127,7 @@ const products = [
   {
     id: 11,
     image: Bracelet5,
-    name: 'Elegant Bracelet',
+    name: 'White Daisy Bracelet',
     price: '60/-',
     description: 'Timeless Beauty',
     size: 'default' as const,
@@ -136,7 +136,7 @@ const products = [
   {
     id: 12,
     image: Bracelet6,
-    name: 'Elegant Bracelet',
+    name: 'Sunflower Petal Bracelet',
     price: '60/-',
     description: 'Handcrafted Elegance',
     size: 'default' as const,
@@ -145,7 +145,7 @@ const products = [
   {
     id: 13,
     image: Bracelet10,
-    name: 'Elegant Bracelet',
+    name: 'Pink Daisy Bracelet',
     price: '60/-',
     description: 'Timeless Beauty',
     size: 'default' as const,
@@ -163,7 +163,7 @@ const products = [
   {
     id: 15,
     image: necklace3,
-    name: 'Classic Necklace',
+    name: 'Pink Daisy Necklace',
     price: '100/-',
     description: 'The new aesthetics',
     size: 'default' as const,
@@ -172,7 +172,7 @@ const products = [
   {
     id: 16,
     image: necklace4,
-    name: 'Classic Necklace',
+    name: 'Cutest Daisy Necklace',
     price: '100/-',
     description: 'The new aesthetics',
     size: 'wide' as const,
@@ -181,7 +181,7 @@ const products = [
   {
     id: 17,
     image: necklace5,
-    name: 'Classic Necklace',
+    name: 'Pearl Daisy Necklace',
     price: '100/-',
     description: 'The new aesthetics',
     size: 'default' as const,
@@ -340,8 +340,8 @@ const ProductShowcase = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-center mt-16"
         >
-          <a href="#collections" className="btn-ghost-luxury" onClick={handleScrollToCollections}>
-            <span>View All Pieces</span>
+          <a href="https://www.instagram.com/klyrajewels/?igsh=bHQyd2I2cnB6enI4#" className="btn-ghost-luxury" >
+            <span>For more details click here</span>
           </a>
         </motion.div>
       </div>
