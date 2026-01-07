@@ -255,7 +255,7 @@ const products = [
    {
     id: 24,
     image: anklet9,
-    name: 'Beaded Anklet',
+    name: 'Midnigh Pearl Anklet',
     price: '80/-',
     description: 'Summer Vibes',
     size: 'default' as const,
@@ -264,7 +264,7 @@ const products = [
    {
     id: 25,
     image: necklace6,
-    name: 'Pearl Daisy Necklace',
+    name: 'Snowdrop Necklace',
     price: '100/-',
     description: 'The new aesthetics',
     size: 'default' as const,
@@ -273,7 +273,7 @@ const products = [
    {
     id: 26,
     image: necklace7,
-    name: 'Pink Daisy Necklace',
+    name: 'Snowdrop Necklace',
     price: '100/-',
     description: 'The new aesthetics',
     size: 'default' as const,
@@ -282,7 +282,7 @@ const products = [
    {
     id: 27,
     image: necklace8,
-    name: 'Pearl Daisy Necklace',
+    name: 'Daisy Pop Necklace',
     price: '100/-',
     description: 'The new aesthetics',
     size: 'default' as const,
@@ -291,8 +291,8 @@ const products = [
     {
     id: 28,
     image: Bracelet11,
-    name: 'Daisy Bloom Bracelet',
-    price: '60/-',
+    name: 'Pearl Whisper Bracelet',
+    price: '90/-',
     description: 'The new aesthetics',
     size: 'default' as const,
     category: 'bracelets',
@@ -300,7 +300,7 @@ const products = [
    {
     id: 29,
     image: Bracelet12,
-    name: 'Daisy Bloom Bracelet',
+    name: 'Vintage Bloom Bracelet',
     price: '60/-',
     description: 'The new aesthetics',
     size: 'default' as const,
