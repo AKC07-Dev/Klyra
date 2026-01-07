@@ -14,6 +14,7 @@ import anklet5 from '@/assets/anklet5.jpeg';
 import anklet6 from '@/assets/anklet6.jpeg';
 import anklet7 from '@/assets/anklet7.jpeg';
 import anklet8 from '@/assets/anklet8.jpeg';
+import anklet9 from '@/assets/anklet9.jpeg';
 import Bracelet from '@/assets/hero-jewelry.jpeg';
 import Bracelet1 from '@/assets/bracelet1.jpeg';
 import Bracelet2 from '@/assets/bracelet2.jpeg';
@@ -25,9 +26,16 @@ import Bracelet7 from '@/assets/bracelet7.jpeg';
 import Bracelet8 from '@/assets/bracelet8.jpeg';
 import Bracelet9 from '@/assets/bracelet9.jpeg';
 import Bracelet10 from '@/assets/bracelet10.jpeg';
+import Bracelet11 from '@/assets/bracelet11.jpeg';
+import Bracelet12 from '@/assets/bracelet12.jpeg';
 import necklace3 from '@/assets/necklace3.jpeg';
 import necklace4 from '@/assets/necklace4.jpeg';
 import necklace5 from '@/assets/necklace5.jpeg';
+import necklace6 from '@/assets/necklace6.jpeg';
+import necklace7 from '@/assets/necklace7.jpeg';
+import necklace8 from '@/assets/necklace8.jpeg';
+
+
 
 type Category = 'all' | 'anklets' | 'necklaces' | 'bracelets';
 
@@ -240,6 +248,63 @@ const products = [
     description: 'Summer Vibes',
     size: 'default' as const,
     category: 'anklets',
+  },
+
+
+   
+   {
+    id: 24,
+    image: anklet9,
+    name: 'Beaded Anklet',
+    price: '80/-',
+    description: 'Summer Vibes',
+    size: 'default' as const,
+    category: 'anklets',
+  },
+   {
+    id: 25,
+    image: necklace6,
+    name: 'Pearl Daisy Necklace',
+    price: '100/-',
+    description: 'The new aesthetics',
+    size: 'default' as const,
+    category: 'necklaces',
+  },
+   {
+    id: 26,
+    image: necklace7,
+    name: 'Pink Daisy Necklace',
+    price: '100/-',
+    description: 'The new aesthetics',
+    size: 'default' as const,
+    category: 'necklaces',
+  },
+   {
+    id: 27,
+    image: necklace8,
+    name: 'Pearl Daisy Necklace',
+    price: '100/-',
+    description: 'The new aesthetics',
+    size: 'default' as const,
+    category: 'necklaces',
+  },
+    {
+    id: 28,
+    image: Bracelet11,
+    name: 'Daisy Bloom Bracelet',
+    price: '60/-',
+    description: 'The new aesthetics',
+    size: 'default' as const,
+    category: 'bracelets',
+  },
+   {
+    id: 29,
+    image: Bracelet12,
+    name: 'Daisy Bloom Bracelet',
+    price: '60/-',
+    description: 'The new aesthetics',
+    size: 'default' as const,
+    category: 'bracelets',
   },
 
 
